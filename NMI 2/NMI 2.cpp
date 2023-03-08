@@ -16,21 +16,19 @@ int main()
 	};
 	float matrix1[3][4];
 
-	
 		//copy
 	for (int i = 0; i < 3; i++)
 		for (int j = 0; j < 4; j++)
 			matrix1[i][j] = matrix[i][j];
 
-
 		//present
 	cout << "Default Matrix: \n";
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 4; j++)
-			cout << " " << matrix[i][j];
+			cout << "  " << matrix[i][j] << " \t";
 		cout << endl;
 	}
-	cout << "...\n";
+	cout << "............................................\n";
 
 	if (matrix[1][0] != 0) {
 		strKoeficient = -matrix[0][0] / matrix[1][0];	//base elem/curr elem
@@ -40,10 +38,10 @@ int main()
 
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 4; j++)
-				cout << " " << matrix[i][j];
+				cout << "  " << matrix[i][j] << " \t";
 			cout << endl;
 		}
-		cout << "...\n";
+		cout << "............................................\n";
 	}
 
 	if (matrix[2][0] != 0) {
@@ -54,10 +52,10 @@ int main()
 
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 4; j++)
-				cout << " " << matrix[i][j];
+				cout << "  " << matrix[i][j] << " \t";
 			cout << endl;
 		}
-		cout << "...\n";
+		cout << "............................................\n";
 	}
 	
 	if (matrix[2][1] != 0) {
@@ -68,10 +66,10 @@ int main()
 
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 4; j++)
-				cout << " " << matrix[i][j];
+				cout << "  " << matrix[i][j] << " \t";
 			cout << endl;
 		}
-		cout << endl;
+		cout << "............................................\n";
 	}
 
 			//find Result
